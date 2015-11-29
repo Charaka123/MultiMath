@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/result">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="You Scored 10/10"
+        android:id="@+id/tScore"
+        android:textSize="45dp"
+        android:textIsSelectable="false"
+        android:textColor="#f5f2ff"
+        android:layout_below="@+id/tLevel"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TimeTaken: 125 Seconds"
+        android:id="@+id/tTime"
+        android:textSize="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/tScore"
+        android:layout_alignStart="@+id/tScore"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Details"
+        android:id="@+id/textView"
+        android:layout_marginTop="53dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/tScore"
+        android:layout_alignLeft="@+id/tTime"
+        android:layout_alignStart="@+id/tTime"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time Per Question: 30 seconds"
+        android:id="@+id/tAverage"
+        android:textSize="30dp"
+        android:layout_below="@+id/tTime"
+        android:layout_alignLeft="@+id/tTime"
+        android:layout_alignStart="@+id/tTime"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Skill Level: ACE!"
+        android:id="@+id/tSkill"
+        android:textSize="30dp"
+        android:layout_below="@+id/tAverage"
+        android:layout_alignLeft="@+id/tAverage"
+        android:layout_alignStart="@+id/tAverage"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/bMenu"
+        android:layout_below="@+id/tSkill"
+        android:layout_alignLeft="@+id/tSkill"
+        android:layout_alignStart="@+id/tSkill"
+        android:layout_marginTop="42dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Next level"
+        android:id="@+id/bLevel"
+        android:layout_alignTop="@+id/bMenu"
+        android:layout_alignRight="@+id/tScore"
+        android:layout_alignEnd="@+id/tScore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Level 1"
+        android:id="@+id/tLevel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:textColor="#f5f2ff"
+        android:clickable="false"
+        android:gravity="top|center_vertical"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
